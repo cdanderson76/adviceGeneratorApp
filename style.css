@@ -1,0 +1,14 @@
+*  {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*Use 'margin: auto' for non flexbox/grid projects */
+
+
+/* Fits images in containers no matter the size */
+
+img {
+   max-width: 100%;
+   height: auto;
+}
