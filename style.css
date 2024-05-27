@@ -28,6 +28,7 @@ img {
   align-items: center;
   width: 100%;
   height: 100vh;
+  background-image: linear-gradient(to top, #202733, #323641, #44464f, #56575d, #68686c, #6a6a6e, #6b6b6f, #6d6d71, #5f5f66, #50525c, #414652, #313a48);
 }
 
 .container {
@@ -99,9 +100,15 @@ img {
   border-radius: 50%;
   position: absolute;
   bottom: -32px;
+  transition: 2s ease;
 }
 
 .dice {
   width: 24px;
   height: 24px;
+}
+
+.dice-container:hover {
+  cursor: pointer;
+  filter: drop-shadow(5px 5px 19px #53FFAA);
 }

@@ -1,6 +1,6 @@
 const advice = document.getElementById('advice');
 const quote = document.getElementById('quote');
-const dice = document.getElementById('dice');
+const diceBtn = document.getElementById('dice-container');
 
 
 async function getQuote() {
@@ -14,7 +14,7 @@ async function getQuote() {
     advice.textContent = `Advice #${data.slip.id}`;
     quote.textContent = `" ${data.slip.advice}"`;
 
-    dice.addEventListener('click', function() {
+    diceBtn.addEventListener('click', function() {
       location.reload();
     });
 
