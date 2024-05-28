@@ -113,4 +113,23 @@ img {
 .dice-container:hover {
   cursor: pointer;
   filter: drop-shadow(5px 5px 19px #53FFAA);
-};
+}
+
+@media (min-width: 600px) {
+
+  .container {
+    min-width: 1440px;
+    height: 810px;
+  }
+
+  .quote-card {
+    width: 540px;
+    height: 332px;
+    margin-top: 223px;
+  }
+
+  .design {
+    width: 444px;
+    height: 16px;
+  }
+}
