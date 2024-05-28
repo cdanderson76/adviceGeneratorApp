@@ -1,6 +1,7 @@
 const advice = document.getElementById('advice');
 const quote = document.getElementById('quote');
 const diceBtn = document.getElementById('dice-container');
+const quoteCard = document.getElementById('quote-card');
 
 
 async function getQuote() {
@@ -12,9 +13,10 @@ async function getQuote() {
     advice.textContent = `Advice #${data.slip.id}`;
     quote.textContent = `"${data.slip.advice}"`;
 
-    if(data.slip.advice.length >= 20 ) {
+    if(data.slip.advice.length >= 70) {
       quote.style.fontSize = '20px';
     }
+    console.log(data.slip.advice.length)
 
     diceBtn.addEventListener('click', function() {
 

@@ -28,7 +28,7 @@ img {
   align-items: center;
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(to top, #202733, #323641, #44464f, #56575d, #68686c, #6a6a6e, #6b6b6f, #6d6d71, #5f5f66, #50525c, #414652, #313a48);
+  background-color: var(--dark-blue);
 }
 
 .container {
@@ -36,7 +36,6 @@ img {
   justify-content: center;
   width: 375px;
   height: 667px;
-  border: 2px solid black;
   background-color: var(--dark-blue);
 }
 
@@ -115,20 +114,26 @@ img {
   filter: drop-shadow(5px 5px 19px #53FFAA);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 500px) {
 
   .container {
-    min-width: 1440px;
-    height: 810px;
+    max-width: 70%;
+    width: 1440px;
   }
 
   .quote-card {
+    max-width: 100%;
     width: 540px;
     height: 332px;
-    margin-top: 223px;
+    border-radius: 15px;
+  }
+  
+  .quote {
+    font-size: 28px;
   }
 
   .design {
+    max-width: 90%;
     width: 444px;
     height: 16px;
   }
