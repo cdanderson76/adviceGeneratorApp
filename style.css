@@ -128,9 +128,11 @@ img {
     border-radius: 15px;
   }
   
-  /* Font needs correction */
   #quote {
-    font-size: 35px;
+    max-width: 85%;
+    font-size: 28px;
+    width: 444px;
+    height: 114px;
   }
 
   .advice {

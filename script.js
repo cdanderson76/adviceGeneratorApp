@@ -4,6 +4,8 @@ const diceBtn = document.getElementById('dice-container');
 const quoteCard = document.getElementById('quote-card');
 
 
+console.log(quoteCard.getBoundingClientRect().width);
+
 async function getQuote() {
 
   try {
@@ -13,17 +15,22 @@ async function getQuote() {
     advice.textContent = `Advice #${data.slip.id}`;
     quote.textContent = `"${data.slip.advice}"`;
 
-    if(data.slip.advice.length >= 70) {
-      quote.style.fontSize = '20px';
+    if(data.slip.advice.length >= 80) {
+      quote.style.fontSize = '22px';
     }
-    console.log(data.slip.advice.length)
+    // else if( data.slip.advice.length < 80 ) {
+    //   quote.style.fontSize = '28px';
+    // }
+
+    // && quoteCard.getBoundingClientRect().width === '540px'
+    
 
     diceBtn.addEventListener('click', function() {
 
       location.reload;
 
-      advice.textContent = `Advice #${data.slip.id}`;
-      quote.textContent = `"${data.slip.advice}"`;
+      advice.textContent;
+      quote.textContent;
 
       advice.textContent = '';
       quote.innerHTML = 
