@@ -35,8 +35,8 @@ img {
 .container {
   display: flex;
   justify-content: center;
-  width: 375px;
-  height: 667px;
+  width: 23.438em;
+  height: 41.688em;
   background-color: var(--dark-blue);
 }
 
@@ -44,11 +44,12 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 343px;
-  height: 315px;
-  margin-top: 120px;
+  width: 21.438em;
+  height: 20em;
+  margin-top: 7.5em;
   background-color: var(--dark-grayish-blue);
-  border-radius: 10px;
+  box-shadow: 1.875em 3.125em 5em 0em rgba(0, 0, 0, 0.10);
+  border-radius: 0.625em;
   position: relative;
 }
 
@@ -56,61 +57,59 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 110px;
-  height: 15px;
+  width: 10em;
+  height: 1em;
   color: var(--neon-green);
   font-family: 'Manrope', sans-serif;
-  font-size: 11px;
+  font-size: 0.688rem;
   font-weight: 400;
-  letter-spacing: 3.457px;
+  letter-spacing: 0.216em;
   text-transform: uppercase;
-  margin-top: 45px;
+  margin-top: 3.9em;
 }
-
-
 
 .quote {
   display: flex;
-  width: 295px;
-  height: 132px;
+  width: 18.438em;
+  height: 8.25em;
   justify-content: center;
   align-items: center;
   color: #CEE3E9;
   font-family: 'Manrope', sans-serif;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 800;
-  margin-top: 30px;
-  letter-spacing: -0.257px;
+  margin-top: 1.4em;
+  letter-spacing: -0.016em;
   text-align: center;
 }
 
 .design {
-  margin-top: 50px;
-  width: 295px;
-  height: 16px;
+  margin-top: 2.2em;
+  width: 18.438em;
+  height: 1em;
 }
 
 .dice-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 64px;
-  height: 64px;
+  width: 4em;
+  height: 4em;
   background-color: #53FFAA;
   border-radius: 50%;
   position: absolute;
-  bottom: -32px;
+  bottom: 18em;
   transition: 2s ease;
 }
 
 .dice {
-  width: 24px;
-  height: 24px;
+  width: 1.5em;
+  height: 1.5em;
 }
 
 .dice-container:hover {
   cursor: pointer;
-  filter: drop-shadow(5px 5px 19px #53FFAA);
+  filter: drop-shadow(0.313em 0.313em 1.188em #53FFAA);
 }
 
 footer a {
@@ -122,9 +121,10 @@ footer a {
 }
 
 .footer-container {
-  margin-top: -60px;
+  margin-top: -3.125em;
   font-family: 'Manrope', sans-serif;
   font-size: 1.2rem;
+  color: #CEE3E9;
   text-align: center;
   width: 70%;
 }
@@ -173,33 +173,31 @@ footer a {
 
   .container {
     max-width: 70%;
-    width: 1440px;
+    width: 90em;
   }
 
   .quote-card {
     max-width: 100%;
-    width: 540px;
-    height: 332px;
-    border-radius: 15px;
+    width: 34.063em;
+    height: 20.75em;
+    border-radius: 0.938em;
   }
   
-  #quote {
+  .quote {
     max-width: 85%;
-    font-size: 28px;
-    width: 444px;
+    font-size: 1.75rem;
+    width: 27.75em;
     height: 114px;
   }
 
   .advice {
-    width: 135px;
-    height: 18px;
-    font-size: 13px;
+    font-size: 0.813rem;
     font-weight: 800;
   }
 
   .design {
     max-width: 90%;
-    width: 444px;
-    height: 16px;
+    width: 27.75em;
+    height: 1.2em;
   }
 }

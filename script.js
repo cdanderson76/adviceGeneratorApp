@@ -20,16 +20,18 @@ async function getQuote() {
 
     // GET YOUR DAMN CONDITIONALS TOGETHER!!!
 
-    if(data.slip.advice.length > 70) {
-      quote.style.fontSize = '22px';
+    if(data.slip.advice.length > 60) {
+      quote.style.fontSize = '1.375rem';
     }
-    else if( data.slip.advice.length < 70 && quoteCard.getBoundingClientRect().width > '500px') {
-      quote.style.fontSize = '24px';
-    }
-    else if( data.slip.advice.length < 70 && quoteCard.getBoundingClientRect().width > '600px') {
-      quote.style.fontSize = '28px'
+    
+    else if( data.slip.advice.length < 60  &&  data.slip.advice.length > 35 ) {
+      quote.style.fontSize = '1.5rem';
     }
 
+    else if( data.slip.advice.length < 35 ) {
+      quote.style.fontSize = '1.75rem';
+    }
+    
     diceBtn.addEventListener('click', function() {
 
       location.reload;
