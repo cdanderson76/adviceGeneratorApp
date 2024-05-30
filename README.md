@@ -3,7 +3,7 @@
 This is an HTML, CSS, and JavaScript challenge in which I practiced the basics (Flexbox, responsiveness, and JavaScript with light DOM manipulation.  With this project, simply click on the dice button,
 and there will be a random quote generated from the Advice Slip JSON API.
 
-
+![Advice Generator App](https://github.com/cdanderson76/adviceGeneratorApp/assets/138369806/336127f8-0b93-4fb7-92e5-014d62dcecec)
 
 
 <h2>What are you most proud of, and what would you do differently next time?</h2>
