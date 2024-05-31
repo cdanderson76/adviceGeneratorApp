@@ -31,6 +31,7 @@ img {
   width: 100%;
   height: 100vh;
   background-color: var(--dark-blue);
+  position: relative;
 }
 
 .container {
@@ -52,7 +53,7 @@ img {
   background-color: var(--dark-grayish-blue);
   box-shadow: 1.875em 3.125em 5em 0em rgba(0, 0, 0, 0.10);
   border-radius: 0.625em;
-  position: relative;
+  /* position: relative; */
 }
 
 .advice {
@@ -101,7 +102,8 @@ img {
   background-color: #53FFAA;
   border-radius: 50%;
   position: absolute;
-  bottom: 23.5em;
+  /* bottom: 23.5em; */
+  bottom: 408px;
   transition: 2s ease;
 }
 
@@ -204,6 +206,6 @@ footer a {
   }
 
   .dice-container {
-    bottom: 367px;
+    bottom: 402px;
   }
 }
