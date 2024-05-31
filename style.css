@@ -101,8 +101,8 @@ img {
   background-color: #53FFAA;
   border-radius: 50%;
   position: absolute;
-  bottom: 18em;
-  /* bottom: 285px; */
+  /* bottom: 18em; */
+  bottom: 305px;
   transition: 2s ease;
 }
 
