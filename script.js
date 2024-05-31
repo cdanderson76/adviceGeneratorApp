@@ -24,20 +24,24 @@ async function getQuote() {
 
     advice.textContent = `Advice #${data.slip.id}`;
     quote.textContent = `"${data.slip.advice}"`;
-
-
-    // Conditionals that set my font size for the quotes
-
-    if(data.slip.advice.length > 60) {
-      quote.style.fontSize = '1.375rem';
-    }
     
-    else if( data.slip.advice.length < 60  &&  data.slip.advice.length > 35 ) {
-      quote.style.fontSize = '1.5rem';
-    };
+    console.log(quote.textContent.length)
   }
   catch(err) {
     console.error('Error: Unable to reach resource', err)
+  }
+
+  // Conditionals that set my font size for the quotes
+
+  if(quote.textContent.length > 90) {
+    quote.style.fontSize = '1.25rem';
+  }
+
+  else if(quote.textContent.length > 50 ) {
+    quote.style.fontSize = '1.375rem';
+  }
+  else {
+    quote.style.fontSize = '1.5rem';
   }
 }
 

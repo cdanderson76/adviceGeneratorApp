@@ -22,11 +22,25 @@ img {
   --light-cyan: #CEE3E9;
 }
 
-.canvas {
+/* Common Fonts */
+
+body {
+  font-family: 'Manrope', sans-serif;
+}
+
+/* Flex Containers */
+
+.canvas,
+.advice,
+.quote,
+.dice-container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.canvas {
+  flex-direction: column;
   width: 100%;
   height: 100vh;
   background-color: var(--dark-blue);
@@ -55,13 +69,10 @@ img {
 }
 
 .advice {
-  display: flex;
-  justify-content: center;
   align-items: center;
   width: 10em;
   height: 1em;
   color: var(--neon-green);
-  font-family: 'Manrope', sans-serif;
   font-size: 0.688rem;
   font-weight: 400;
   letter-spacing: 0.216em;
@@ -70,18 +81,13 @@ img {
 }
 
 .quote {
-  display: flex;
-  width: 10em;
+  width: 12.8em;
   height: 5.5em;
-  justify-content: center;
-  align-items: center;
   color: #CEE3E9;
-  font-family: 'Manrope', sans-serif;
   font-size: 1.5rem;
   font-weight: 800;
   margin-top: 1.4em;
   letter-spacing: -0.016em;
-  /* border: 2px solid white; */
   text-align: center;
 }
 
@@ -92,15 +98,12 @@ img {
 }
 
 .dice-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 4em;
   height: 4em;
   background-color: #53FFAA;
+  border: none;
   border-radius: 50%;
   position: absolute;
-  /* bottom: 18em; */
   bottom: 24.5%;
   transition: 2s ease;
 }
@@ -118,7 +121,6 @@ img {
 
 footer a {
   font-size: 0.9rem;
-  font-family: 'Manrope', sans-serif;
   text-decoration: none;
   animation: smoothFill 5s ease-out 0s infinite both;
   width: 80%;
@@ -202,8 +204,4 @@ footer a {
     width: 27.75em;
     height: 1.2em;
   }
-
-  /* .dice-container {
-    bottom: 402px;
-  } */
 }
