@@ -26,7 +26,6 @@ async function getQuote() {
     quote.textContent = `"${data.slip.advice}"`;
 
 
-
     // Conditionals that set my font size for the quotes
 
     if(data.slip.advice.length > 60) {
@@ -35,11 +34,7 @@ async function getQuote() {
     
     else if( data.slip.advice.length < 60  &&  data.slip.advice.length > 35 ) {
       quote.style.fontSize = '1.5rem';
-    }
-
-    else if( data.slip.advice.length < 35 ) {
-      quote.style.fontSize = '1.75rem';
-    }
+    };
   }
   catch(err) {
     console.error('Error: Unable to reach resource', err)

@@ -72,8 +72,8 @@ img {
 
 .quote {
   display: flex;
-  width: 18.438em;
-  height: 8.25em;
+  width: 10em;
+  height: 5.5em;
   justify-content: center;
   align-items: center;
   color: #CEE3E9;
@@ -82,11 +82,12 @@ img {
   font-weight: 800;
   margin-top: 1.4em;
   letter-spacing: -0.016em;
+  /* border: 2px solid white; */
   text-align: center;
 }
 
 .design {
-  margin-top: 2.2em;
+  margin-top: 1.9em;
   width: 18.438em;
   height: 1em;
 }
@@ -100,6 +101,7 @@ img {
   background-color: #53FFAA;
   border-radius: 50%;
   position: absolute;
+  bottom: 23.5em;
   transition: 2s ease;
 }
 
